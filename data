@@ -1,0 +1,27 @@
+## Data
+
+The analyses performed in this pipeline are based on publicly available multi-omics datasets and on data files derived or prepared from these public resources.
+
+The following files were used to run the pipeline.
+
+### IBS dataset — PRJNA812699
+
+* `Patients.csv` *
+* `metadata1.csv` *
+* `metadata2.csv` *
+* `16s_data.csv` (publicly available source file)
+* `16s_taxonomy_table_updated.csv` (publicly available source file)
+* `Transcripts_KO_data.csv` (publicly available source file)
+* `metabolomics_data.csv` (publicly available source file)
+
+These files provide the patient metadata, taxonomic, metatranscriptomic, and metabolomic data used for the primary IBS multi-omics analysis.
+
+### IBDMDB/HMP2 dataset
+
+* `taxonomic_profiles_3.tsv.gz` (publicly available source file)
+* `metadata_metagenomics.csv` (publicly available source file)
+* `HMP2_metabolomics_w_metadata.biom` (publicly available source file)
+
+These files provide the metagenomic taxonomic profiles, sample metadata, and metabolomic data used for the external cross-disease analysis.
+
+* Files generated or prepared from the publicly available source datasets for use in the present analysis.
