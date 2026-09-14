@@ -18,7 +18,8 @@ The main analytical steps include:
 # Data
 The IBS dataset includes taxonomic, metatranscriptomic, metabolomic, and clinical metadata.
 The external IBD dataset is used to evaluate the cross-disease behavior of the IBS-derived multi-omics signature.
-Raw datasets are not included in this repository. Instructions and references for obtaining the source datasets are provided in the `data` directory.
+Raw datasets are not included in this repository. Instructions and references for obtaining the source datasets are provided in the `data` directory.Raw source datasets are not included in this repository. Derived data files prepared for the present analysis are provided in the data directory. Instructions and references for obtaining the original publicly available source datasets are also provided in the data directory.
+
 ## Requirements
 The analysis was performed in R.
 Main R packages:
