@@ -1,27 +1,45 @@
 ## Data
 
-The analyses performed in this pipeline are based on publicly available multi-omics datasets and on data files derived or prepared from these public resources.
+The analyses performed in this pipeline are based on publicly available multi-omics datasets and data files derived or prepared from these resources for the present study.
 
-The following files were used to run the pipeline.
+The `Dataset/` directory contains the input files, processed datasets, and intermediate data files used for multi-omics integration, LASSO feature selection, and cross-disease evaluation.
 
 ### IBS dataset — PRJNA812699
 
-* `Patients.csv` *
-* `metadata1.csv` *
-* `metadata2.csv` *
-* `16s_data.csv` (publicly available source file)
-* `16s_taxonomy_table_updated.csv` (publicly available source file)
-* `Transcripts_KO_data.csv` (publicly available source file)
-* `metabolomics_data.csv` (publicly available source file)
+The following files were used for the primary IBS multi-omics analysis:
 
-These files provide the patient metadata, taxonomic, metatranscriptomic, and metabolomic data used for the primary IBS multi-omics analysis.
+- `Patients.csv`
+- `metadata1.csv`
+- `metadata2.csv`
+- `16s_data.csv` (publicly available source file)
+- `16s_taxonomy_table_updated.csv` (publicly available source file)
+- `Transcripts_KO_data.csv` (publicly available source file)
+- `metabolomics_data.csv` (publicly available source file)
+
+These files provide patient metadata and taxonomic, metatranscriptomic, and metabolomic data used in the primary IBS analysis.
 
 ### IBDMDB/HMP2 dataset
 
-* `taxonomic_profiles_3.tsv.gz` (publicly available source file)
-* `metadata_metagenomics.csv` (publicly available source file)
-* `HMP2_metabolomics_w_metadata.biom` (publicly available source file)
+The following files were used for the external cross-disease analysis:
 
-These files provide the metagenomic taxonomic profiles, sample metadata, and metabolomic data used for the external cross-disease analysis.
+- `taxonomic_profiles_3.tsv.gz` (publicly available source file)
+- `metadata_metagenomics.csv` (publicly available source file)
+- `HMP2_metabolomics_w_metadata.biom` (publicly available source file)
 
-* Files generated or prepared from the publicly available source datasets for use in the present analysis.
+These files provide metagenomic taxonomic profiles, sample metadata, and metabolomic data used to evaluate the cross-disease behavior of the IBS-derived multi-omics signature.
+
+### Processed datasets and analysis input files
+
+The following files contain processed data, analysis inputs, or outputs generated during the present study:
+
+- `taxa_scaled.csv`: processed and scaled taxonomic data.
+- `metatranscriptomics_scaled.csv`: processed and scaled metatranscriptomic data.
+- `metabolomics_scaled.csv`: processed and scaled metabolomic data.
+- `minttea_input.csv`: input file prepared for multi-omics integration using MintTea.
+- `lasso_input.csv`: input file prepared for LASSO feature selection.
+- `lasso_coefficients.csv`: coefficients obtained from the LASSO model.
+- `module1_features.csv`: features associated with the first multi-omics module.
+
+The `Dataset/` directory therefore includes the data files required for the main analytical workflow, from data preprocessing and multi-omics integration to feature selection and signature characterization.
+
+The original publicly available datasets can be accessed through their respective public repositories. References and accessions are provided above.
